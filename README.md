@@ -8,7 +8,13 @@
   <i>고양이와 츄르를 향한 점프 모험</i>
 </p>
 
-<br> <br>
+<p align="center">
+  <a href="https://youtu.be/BIQlgI6KWB4" target="_blank">
+    🎥 <b>Watch Gameplay on YouTube</b>
+  </a>
+</p>
+
+<br><br>
 
 ## 🎮 Gameplay
 
@@ -34,6 +40,7 @@
 - ```Images/Backgrounds/PlayGame``` → Provided during class
 - ```Images/Players``` → [Asset Store](https://assetstore.unity.com/packages/2d/characters/pet-cats-pixel-art-pack-248340)
 - ```Images/UIs``` → ChatGPT
+- ```Images/Effects``` → [Asset Store](https://assetstore.unity.com/packages/2d/characters/pixel-adventure-1-155360)
 
 <br><br>
 
