@@ -29,6 +29,8 @@ namespace Cat
             _catRigidbody = GetComponent<Rigidbody2D>();
             _catAnimator = GetComponent<Animator>();
             
+            _catRigidbody.constraints = RigidbodyConstraints2D.FreezePositionX;
+            
             _hps = new GameObject[hpRoot.childCount];
             for (int i = 0; i < hpRoot.childCount; i++)
             {
