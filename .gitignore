@@ -83,3 +83,26 @@ crashlytics-build.properties
 /[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db.meta
 /[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers
 /[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers.meta
+
+# Rider project settings (user-specific) #####################################################
+.idea/
+*.sln.iml
+
+# Rider workspace-specific settings
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/usage.statistics.xml
+.idea/dictionaries/
+.idea/shelf/
+.idea/httpRequests/
+
+# Rider local history (can grow large, not needed in VCS)
+.idea/.localHistory/
+
+# Rider modules folder
+.idea/.idea_modules/
+.idea/.name
+
+# Rider caches & logs (just in case)
+.idea/.cache/
+.idea/log/
