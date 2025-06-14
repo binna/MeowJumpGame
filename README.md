@@ -84,12 +84,31 @@
 
 <details>
 <summary>파이프 속도가 일정해서 단조로웠음</summary>
-5초마다 Max Speed +1 로 해결
+  5초마다 Max Speed +1 로 해결
+</details>
+
+<details>
+<summary>한 번에 게임이 끝나는게 아쉬웠음</summary>
+  목숨이란 개념을 만들었음 <br>
+  또한 목숨만 제거하면 부딪힌 파이프에 계속 부딪히게 되어 위치를 파이프보다 높은 위치에서 떨어져서 시작하게 만듦
+</details>
+
+<details>
+<summary>츄르 만듦</summary>
+  수업시간에서는 사과였으나 고양이와 과일은 맞지 않는 피드백을 수용 <br>
+  고양이가 가장 좋아한다는 츄르를 따라가는 것으로 만듦 <br>
+  이때 애니메이션을 직접 만들었으며, ChatGPT를 이용하여 이미지를 만들어 하나로 합쳐서 애니메이션을 만듦
 </details>
 
 <details>
 <summary>Rigidbody2D가 X축으로 밀려나는 버그</summary>
-Rigidbody Constraints로 X축 이동 고정
+  Rigidbody Constraints로 X축 이동 고정
+</details>
+
+<details>
+<summary>프리팹 이용</summary>
+  수업시간에는 직접 만들었으나 번거로움<br>
+  코드로 직접 제어하고 싶어 수정
 </details>
 
 <br><br>
