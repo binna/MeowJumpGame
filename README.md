@@ -16,12 +16,40 @@
 
 <br><br>
 
+## 📑 Table of Contents
+
+1. [🎮 Gameplay](#-gameplay)
+2. [📌 주요 기능](#-주요-기능)
+3. [🛠️ Tech Stack](#-tech-stack)
+4. [🎵 Sound Resources](#-sound-resources)
+
+<br><br>
+
 ## 🎮 Gameplay
 
 - **A 2D casual game where a cat jumps over obstacles to collect Churu**  <br>
   _고양이가 점프해서 장애물을 피하고, 츄르를 모으는 2D 캐주얼 게임_
 
-<br> <br>
+<br><br>
+
+## 📌 주요 기능
+
+1. **무한 맵 (*Endless Map*)**  
+   끝없이 이어지는 배경으로 무한 점프 플레이가 가능하다
+
+2. **파이프 속도 랜덤화 (*Random Pipe Speed*)**  
+   파이프는 최소 속도 3으로 시작하며, 5초마다 최대 속도가 1씩 증가한다
+
+3. **목숨 시스템 (*Lives System*)**  
+   플레이어는 총 5개의 목숨을 가지며, 목숨이 하나 줄어들면 시작 위치로 복귀한다
+
+4. **닉네임 표시 (*Nickname Display*)**  
+   Intro에서 닉네임을 입력하면, 게임 중 화면 상단에 고정되어 표시된다
+
+5. **기록 확인 (*Record Viewer*)**  
+   Outer에서 자신의 플레이 기록을 확인할 수 있다
+
+<br><br>
 
 ## 🛠️ Tech Stack
 
