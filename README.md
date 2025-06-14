@@ -84,12 +84,12 @@
 
 <details>
 <summary>파이프 속도가 일정해서 단조로웠음</summary>
-파이프 속도가 일정해서 단조로웠음
+5초마다 Max Speed +1 로 해결
 </details>
 
 <details>
 <summary>Rigidbody2D가 X축으로 밀려나는 버그</summary>
- Rigidbody Constraints로 X축 이동 고정
+Rigidbody Constraints로 X축 이동 고정
 </details>
 
 <br><br>
@@ -119,3 +119,7 @@ _All music and sound effects sourced from [Pixabay](https://pixabay.com/)
 
 
 <br> <br>
+
+---
+
+Thanks for checking out **Meow Jump Game**! ⭐️⭐️
