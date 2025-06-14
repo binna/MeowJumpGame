@@ -21,9 +21,11 @@
 
 1. [🎮 Gameplay](#Gameplay)
 2. [📌 Main Feature](#Main-Feature)
-3. [⚙️ Tech Stack](#Tech-Stack)
-4. [🎨 Art Resources](#Art-Resources)
-5. [🎵 Sound Resources](#Sound-Resources)
+3. [🛠️ Tech Stack](#Tech-Stack)
+4. [🔑 Technical](#Technical)
+5. [🐞 Known Issues & Solutions](#Known-Issues--Solutions)
+6. [🎨 Art Resources](#Art-Resources)
+7. [🎵 Sound Resources](#Sound-Resources)
 
 <hr>
 <br><br>
@@ -61,6 +63,34 @@
 | Engine | Unity 6000.0.46f1 |
 | Language | C# |
 | IDE | JetBrains Rider |
+
+<br><br>
+
+## Technical
+
+<details>
+<summary>Endless Map 시스템으로 무한 배경 스크롤 구현</summary>
+추후 기재
+</details>
+
+<details>
+<summary>닉네임 고정 표시 UI와 기록 표시 기능 직접 제작</summary>
+추후 기재
+</details>
+
+<br><br>
+
+## Known Issues & Solutions
+
+<details>
+<summary>파이프 속도가 일정해서 단조로웠음</summary>
+파이프 속도가 일정해서 단조로웠음
+</details>
+
+<details>
+<summary>Rigidbody2D가 X축으로 밀려나는 버그</summary>
+ Rigidbody Constraints로 X축 이동 고정
+</details>
 
 <br><br>
 
