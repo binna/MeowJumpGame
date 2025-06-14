@@ -18,10 +18,11 @@
 
 ## 📑 Table of Contents
 
-1. [🎮 Gameplay](#-gameplay)
-2. [📌 주요 기능](#-주요-기능)
-3. [🛠️ Tech Stack](#-tech-stack)
-4. [🎵 Sound Resources](#-sound-resources)
+1. [🎮 Gameplay](#gameplay)
+2. [📌 Main Feature](#Main-Feature)
+3. [🛠️ Tech Stack](#tech-stack)
+4. [🎨 Art Resources](#art-resources)
+5. [🎵 Sound Resources](#sound-resources)
 
 <br><br>
 
@@ -32,7 +33,7 @@
 
 <br><br>
 
-## 📌 주요 기능
+## 📌 Main Feature
 
 1. **무한 맵 (*Endless Map*)**  
    끝없이 이어지는 배경으로 무한 점프 플레이가 가능하다
