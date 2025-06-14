@@ -15,25 +15,27 @@
 </p>
 
 <br><br>
+<hr>
 
 ## 📑 Table of Contents
 
-1. [🎮 Gameplay](#-Gameplay)
-2. [📌 Main Feature](#-Main-Feature)
-3. [⚙️ Tech Stack](#-Tech-Stack)
-4. [🎨 Art Resources](#-Art-Resources)
-5. [🎵 Sound Resources](#-Sound-Resources)
+1. [🎮 Gameplay](#Gameplay)
+2. [📌 Main Feature](#Main-Feature)
+3. [⚙️ Tech Stack](#Tech-Stack)
+4. [🎨 Art Resources](#Art-Resources)
+5. [🎵 Sound Resources](#Sound-Resources)
 
+<hr>
 <br><br>
 
-## 🎮 Gameplay
+## Gameplay
 
 - **A 2D casual game where a cat jumps over obstacles to collect Churu**  <br>
   _고양이가 점프해서 장애물을 피하고, 츄르를 모으는 2D 캐주얼 게임_
 
 <br><br>
 
-## 📌 Main Feature
+## Main Feature
 
 1. **무한 맵 (*Endless Map*)**  
    끝없이 이어지는 배경으로 무한 점프 플레이가 가능하다
@@ -52,7 +54,7 @@
 
 <br><br>
 
-## ⚙️ Tech Stack
+## Tech Stack
 
 | 항목 | 내용 |
 |------|------|
@@ -62,7 +64,7 @@
 
 <br><br>
 
-## 🎨 Art Resources
+## Art Resources
 
 - ```Images/Backgrounds/Intro``` → ChatGPT
 - ```Images/Backgrounds/Outer``` → ChatGPT
@@ -73,7 +75,7 @@
 
 <br><br>
 
-## 🎵 Sound Resources
+## Sound Resources
 
 - [Intro BGM](https://pixabay.com/music/video-games-exploration-chiptune-rpg-adventure-theme-336428/)
 - [Play BGM](https://pixabay.com/music/upbeat-game-music-player-console-8bit-background-intro-theme-297305/)
