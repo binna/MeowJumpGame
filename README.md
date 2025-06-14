@@ -149,7 +149,7 @@ _상업적 사용 무료, 출처 표기 불필요_
 
 <div align="center">
 
-⭐ **Thanks for checking out Meow Jump Game!** ⭐
+⭐ **Thanks for checking out my project!** ⭐
 
 📌 **본 프로젝트는 개인 포트폴리오 용도로 제작되었습니다**  
 저작권 및 기타 문제되는 부분이 있을 경우  
