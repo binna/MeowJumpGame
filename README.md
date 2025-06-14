@@ -20,7 +20,7 @@
 
 1. [🎮 Gameplay](#-gameplay)
 2. [📌 Main Feature](#-Main-Feature)
-3. [🛠️ Tech Stack](#tech-stack)
+3. [🛠️ Tech Stack](#-tech-stack)
 4. [🎨 Art Resources](#-art-resources)
 5. [🎵 Sound Resources](#-sound-resources)
 
@@ -52,7 +52,7 @@
 
 <br><br>
 
-## Tech Stack
+## 🛠️ Tech Stack
 
 | 항목 | 내용 |
 |------|------|
