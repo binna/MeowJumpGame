@@ -18,11 +18,11 @@
 
 ## 📑 Table of Contents
 
-1. [🎮 Gameplay](#-gameplay)
+1. [🎮 Gameplay](#-Gameplay)
 2. [📌 Main Feature](#-Main-Feature)
-3. [⚙️ Tech Stack](#-tech-stack)
-4. [🎨 Art Resources](#-art-resources)
-5. [🎵 Sound Resources](#-sound-resources)
+3. [⚙️ Tech Stack](#-Tech-Stack)
+4. [🎨 Art Resources](#-Art-Resources)
+5. [🎵 Sound Resources](#-Sound-Resources)
 
 <br><br>
 
