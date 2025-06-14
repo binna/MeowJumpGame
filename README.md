@@ -1,5 +1,5 @@
 # 🐾 Meow Jump Game
-> ✨ 고양이와 츄르, 그리고 모험이 있는 픽셀 세계 속으로!
+> ✨ 고양이와 츄르, 그리고 모험의 세계로!
 
 ![image](https://github.com/user-attachments/assets/a2d6d160-0ba3-4091-b5ed-fa4b7d87e557)
 
@@ -40,19 +40,19 @@
 ## Main Feature
 
 1. **무한 맵 (*Endless Map*)**  
-   끝없이 이어지는 배경으로 무한 점프 플레이가 가능하다
+   끝없이 이어지는 배경으로 무한 점프 플레이가 가능
 
 2. **파이프 속도 랜덤화 (*Random Pipe Speed*)**  
-   파이프는 최소 속도 3으로 시작하며, 5초마다 최대 속도가 1씩 증가한다
+   파이프는 최소 속도 3으로 시작하며, 5초마다 최대 속도가 1씩 증가
 
 3. **목숨 시스템 (*Lives System*)**  
-   플레이어는 총 5개의 목숨을 가지며, 목숨이 하나 줄어들면 시작 위치로 복귀한다
+   플레이어는 총 5개의 목숨을 가지며, 목숨이 하나 줄어들면 시작 위치로 복귀
 
 4. **닉네임 표시 (*Nickname Display*)**  
-   Intro에서 닉네임을 입력하면, 게임 중 화면 상단에 고정되어 표시된다
+   Intro에서 닉네임을 입력하면, 게임 중 화면 상단에 고정되어 표시
 
 5. **기록 확인 (*Record Viewer*)**  
-   Outer에서 자신의 플레이 기록을 확인할 수 있다
+   Outer에서 자신의 플레이 기록을 확인 가능
 
 <br><br>
 
@@ -126,19 +126,33 @@
 
 ## Sound Resources
 
-- [Intro BGM](https://pixabay.com/music/video-games-exploration-chiptune-rpg-adventure-theme-336428/)
-- [Play BGM](https://pixabay.com/music/upbeat-game-music-player-console-8bit-background-intro-theme-297305/)
-- [Outer BGM](https://pixabay.com/music/cartoons-lemonade-stand-329815/)
-- [Item Gain](https://pixabay.com/sound-effects/item-pick-up-38258/)
-- [Jump](https://pixabay.com/sound-effects/cartoon-jump-6462/)
-- [Collision](https://pixabay.com/sound-effects/small-rock-break-194553/)
+- [Intro BGM](https://pixabay.com/music/video-games-exploration-chiptune-rpg-adventure-theme-336428/) → 인트로 배경 음악
+- [Play BGM](https://pixabay.com/music/upbeat-game-music-player-console-8bit-background-intro-theme-297305/) → 게임 진행 배경 음악
+- [Outer BGM](https://pixabay.com/music/cartoons-lemonade-stand-329815/) → 외부 배경 음악
+- [Item Gain](https://pixabay.com/sound-effects/item-pick-up-38258/) → 아이템 획득 효과음
+- [Jump](https://pixabay.com/sound-effects/cartoon-jump-6462/) → 점프 효과음
+- [Collision](https://pixabay.com/sound-effects/small-rock-break-194553/) → 충돌 효과음
 
-_All music and sound effects sourced from [Pixabay](https://pixabay.com/)  
-(Pixabay License – free for commercial use, no attribution required)_
+<br>
 
 
-<br> <br>
+**All sounds and music used in this project are from [Pixabay](https://pixabay.com/)**  
+_모든 음악 및 효과음은 [Pixabay](https://pixabay.com/)에서 제공됩니다_
+
+Free for commercial use, no attribution required  
+_상업적 사용 무료, 출처 표기 불필요_
+
+
+<br><br>
 
 ---
 
-Thanks for checking out **Meow Jump Game**! ⭐️⭐️
+<div align="center">
+
+⭐ **Thanks for checking out Meow Jump Game!** ⭐
+
+📌 **본 프로젝트는 개인 포트폴리오 용도로 제작되었습니다.**  
+저작권 및 기타 문제되는 부분이 있을 경우  
+`every5116@naver.com` 으로 연락 주시면 신속히 대응하겠습니다.
+</div>
+
