@@ -1,21 +1,22 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Cat
 {
     public class UIManager : MonoBehaviour
     {
         [SerializeField]
-        private TMP_InputField inputField;
+        private TMP_InputField nicknameInputField;
         
-        [SerializeField]
-        private TextMeshProUGUI nameTextUI;
+        [FormerlySerializedAs("nicknameTextUI")] [SerializeField]
+        private TextMeshProUGUI nicknameText;
         
-        [SerializeField]
-        private TextMeshProUGUI recordTextUI;
+        [FormerlySerializedAs("recordTextUI")] [SerializeField]
+        private TextMeshProUGUI recordText;
 
         [SerializeField] 
-        private GameObject playGame;
+        private GameObject gamePlayRoot;
         
         [SerializeField] 
         private GameObject introUI;
@@ -28,21 +29,15 @@ namespace Cat
 
         [SerializeField]
         private GameObject playUI;
-
-        [SerializeField] 
-        private CatController catController;
-        
-        [SerializeField]
-        private GameManager gameManager;
         
         void Awake()
         {
-            playGame.SetActive(false);
+            gamePlayRoot.SetActive(false);
             playUI.SetActive(false);
             introUI.SetActive(true);
             outerUI.SetActive(false);
         }
-        
+
         public void OnAlertConfirmButton()
         {
             alertUI.SetActive(false);
@@ -50,26 +45,25 @@ namespace Cat
 
         public void OnStartButton()
         {
-            if (inputField.text == "")
+            if (nicknameInputField.text == "")
             {
                 alertUI.SetActive(true);
                 return;
             }
 
-            playGame.SetActive(true);
+            gamePlayRoot.SetActive(true);
             playUI.SetActive(true);
             introUI.SetActive(false);
             outerUI.SetActive(false);
             
-            gameManager.ScoreReset();
+            GameHUDManager.ScoreReset();
 
-            nameTextUI.text = inputField.text;
-            catController.CreateGame();
+            nicknameText.text = nicknameInputField.text;
         }
 
         public void OnMoveLobbyButton()
         {
-            playGame.SetActive(false);
+            gamePlayRoot.SetActive(false);
             playUI.SetActive(false);
             introUI.SetActive(true);
             outerUI.SetActive(false);
@@ -77,8 +71,8 @@ namespace Cat
 
         public void OuterUI(string text)
         {
-            recordTextUI.text = text;
-            playGame.SetActive(false);
+            recordText.text = text;
+            gamePlayRoot.SetActive(false);
             playUI.SetActive(false);
             introUI.SetActive(false);
             outerUI.SetActive(true);

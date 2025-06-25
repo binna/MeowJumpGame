@@ -2,29 +2,27 @@ using UnityEngine;
 
 namespace Cat
 {
-    public class CatController : MonoBehaviour
+    public class PlayerController : MonoBehaviour
     {
         [SerializeField] 
-        private SoundManager soundManager;
-
-        [SerializeField] 
         private Transform hpRoot;
-
-        [SerializeField] 
-        private UIManager uiManager;
-
-        private readonly Vector3 InitPosition = new(0, 5f, 0);
         
-        private const float LINEAR_VELOCITY_Y_LIMIT = 10.5f;
-        private const float JUMP_POWER = 7f;
+        private readonly Vector3 _initPosition = new(0, 5f, 0);
+        
+        //[SerializeField] 
+        private UIManager _uiManager;
+        
+        //[SerializeField] 
+        private SoundManager _soundManager;
         
         private Rigidbody2D _catRigidbody;
         private Animator _catAnimator;
+        
         private GameObject[] _hps;
 
         private int _lifeCount;
         
-        void Awake()
+        private void Awake()
         {
             _catRigidbody = GetComponent<Rigidbody2D>();
             _catAnimator = GetComponent<Animator>();
@@ -36,31 +34,37 @@ namespace Cat
             {
                 _hps[i] = hpRoot.GetChild(i).gameObject;
             }
+
+            _uiManager = GameObject.Find("@UIManager")
+                .GetComponent<UIManager>();
+            
+            _soundManager = GameObject.Find("@SoundManager")
+                .GetComponent<SoundManager>();
         }
       
         private void OnEnable()
         {
-            CreateGame();
+            ResetGame();
         }
 
-        void Update()
+        private void Update()
         {
             if (transform.position.y < -3f)
             {
-                transform.localPosition = InitPosition; 
+                transform.localPosition = _initPosition; 
                 return;
             }
 
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                soundManager.OnJumpSound();
+                _soundManager.OnJumpSound();
                 
                 _catAnimator.SetTrigger(Define.AnimationParameter.JUMP);
-                _catRigidbody.AddForceY(JUMP_POWER, ForceMode2D.Impulse);
+                _catRigidbody.AddForceY(Define.JUMP_POWER, ForceMode2D.Impulse);
 
                 // 자연스러운 점프를 위한 속도 제한
-                if (_catRigidbody.linearVelocityY > LINEAR_VELOCITY_Y_LIMIT)
-                    _catRigidbody.linearVelocityY = LINEAR_VELOCITY_Y_LIMIT;
+                if (_catRigidbody.linearVelocityY > Define.LINEAR_VELOCITY_Y_LIMIT)
+                    _catRigidbody.linearVelocityY = Define.LINEAR_VELOCITY_Y_LIMIT;
             }
 
             var catRotation = transform.eulerAngles;
@@ -75,8 +79,8 @@ namespace Cat
                 other.gameObject.SetActive(false);
                 other.transform.parent.GetComponent<ItemController>().PlayEffect();
                 
-                GameManager.PlusScore();
-                soundManager.OnGainItemSound();
+                GameHUDManager.PlusScore();
+                _soundManager.OnGainItemSound();
             }
         }
         
@@ -85,17 +89,17 @@ namespace Cat
             switch (other.gameObject.tag)
             {
                 case Define.TagType.PIPE:
-                    transform.localPosition = InitPosition;
+                    transform.localPosition = _initPosition;
                     
-                    soundManager.OnCollisionSound();
+                    _soundManager.OnCollisionSound();
                     
                     _hps[_lifeCount].SetActive(false);
                     _lifeCount++;
                     
                     if (_lifeCount >= 5)
                     {
-                        soundManager.SetOutroSound();
-                        uiManager.OuterUI(GameManager.GetRecordText());
+                        _soundManager.SetOutroSound();
+                        _uiManager.OuterUI(GameHUDManager.GetRecordText());
                     }
                     return;
                 case Define.TagType.GROUND:
@@ -104,10 +108,10 @@ namespace Cat
             }
         }
 
-        public void CreateGame()
+        private void ResetGame()
         {
             transform.localPosition = Vector3.zero; 
-            soundManager.SetBGMSound();
+            _soundManager.SetBGMSound();
             
             _lifeCount = 0;
             

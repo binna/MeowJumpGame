@@ -14,14 +14,11 @@ namespace Cat
         [SerializeField] 
         private GameObject particle;
 
-        private const float MOVE_SPEED_MIN = 3f;
-        private const float RETURN_Y_MIN = -3f;
-        private const float RETURN_Y_MAX = -8f;
-        private const float START_POSITION_X = 45f;
-        private const float BACKGROUND_END_X = -10f;
-        private const float SPEED_UP_INTERVAL = 5f;
-
-        private Define.ColliderType colliderType = Define.ColliderType.Pipe;
+        private readonly int _colliderTypeCount = System.Enum
+            .GetValues(typeof(Define.ColliderType))
+            .Length;
+        
+        private Define.ColliderType _colliderType = Define.ColliderType.Pipe;
         
         private float _moveSpeedMax;
         private float _speedUpTimer;
@@ -37,7 +34,7 @@ namespace Cat
 
         private void OnEnable()
         {
-            _moveSpeedMax = MOVE_SPEED_MIN;
+            _moveSpeedMax = Define.MOVE_SPEED_MIN;
             SetRandomSetting(_initPosition.x);
         }
 
@@ -46,12 +43,13 @@ namespace Cat
             transform.position += Vector3.left * _moveSpeed * Time.deltaTime;
             _speedUpTimer += Time.deltaTime;
 
-            if (transform.position.x < BACKGROUND_END_X)
+            if (transform.position.x < Define.BACKGROUND_END_X)
             {
-                SetRandomSetting(START_POSITION_X);
+                SetRandomSetting(Define.START_POSITION_X);
             }
         }
-
+        
+        
         public void PlayEffect()
         {
             particle.SetActive(true);
@@ -59,24 +57,23 @@ namespace Cat
 
         private void SetRandomSetting(float positionX)
         {
-            _randomPosY = Random.Range(RETURN_Y_MAX, RETURN_Y_MIN);
+            _randomPosY = Random.Range(Define.RETURN_Y_MAX, Define.RETURN_Y_MIN);
             transform.position = new Vector3(positionX, _randomPosY, 0);
 
             pipe.SetActive(false);
             churu.SetActive(false);
             particle.SetActive(false);
 
-            colliderType = (Define.ColliderType)Random.Range(0, 3);
+            _colliderType = (Define.ColliderType)Random.Range(0, _colliderTypeCount);
+            _moveSpeed = Random.Range(Define.MOVE_SPEED_MIN, _moveSpeedMax);
             
-            _moveSpeed = Random.Range(MOVE_SPEED_MIN, _moveSpeedMax);
-            
-            if (_speedUpTimer > SPEED_UP_INTERVAL)
+            if (_speedUpTimer > Define.SPEED_UP_INTERVAL)
             {
                 _speedUpTimer = 0;
                 _moveSpeedMax += 1;
             }
-
-            switch (colliderType)
+            
+            switch (_colliderType)
             {
                 case Define.ColliderType.Pipe:
                     pipe.SetActive(true);
