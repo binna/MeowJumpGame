@@ -115,22 +115,16 @@
 <details>
 <summary>파이프와의 충돌 후, 모서리에 부딪힐 때 방향값이 바뀌며 X축으로 미끄러지는 문제</summary>
   
-  - 충돌 시 물리 연산에 의해 X축 이동이 발생하는 현상을 방지하기 위해, `Constraints`에서 X축 위치를 고정함 (`Freeze Position X`)
+  - 충돌 시 물리 연산에 의해 X축 이동이 발생하는 현상을 방지하기 위해,
+    `Constraints`에서 X축 위치를 고정함 (`Freeze Position X`)
   
-</details>
-
-<details>
-<summary>프리팹 이용</summary>
-  수업시간에는 직접 만들었으나 번거로움<br>
-  코드로 직접 제어하고 싶어 수정
 </details>
 
 <details>
 <summary>AudioSource 동적 로딩 및 할당</summary>
 
-- `Resources.Load<AudioSource>()`를 통해 사운드 프리팹을 런타임 로딩  
-- `Instantiate()`로 오디오 인스턴스를 생성하고, 필요한 Clip만 설정하여 재생  
-- 정적 BGM 컨트롤을 위해 `DontDestroyOnLoad()`와 조합하여 사용 가능
+  - `Resources.Load<AudioSource>()`를 통해 사운드 클립을 런타임에 로드
+  - 기존에 붙어 있는 `AudioSource`에 Clip을 설정하여 재생
 
 </details>
 
