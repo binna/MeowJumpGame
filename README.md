@@ -124,7 +124,7 @@
 <summary>AudioClip 로딩 및 AudioSource 할당</summary>
 
   - `Resources.Load<AudioClip>()`를 통해 사운드 클립을 런타임에 로드
-  - 기존에 붙어 있는 `AudioSource`에 Clip을 설정하여 재생
+    기존에 붙어 있는 `AudioSource`에 Clip을 설정하여 재생
 
 </details>
 
