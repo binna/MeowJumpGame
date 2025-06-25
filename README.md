@@ -115,13 +115,13 @@
 <details>
 <summary>파이프와의 충돌 후, 모서리에 부딪힐 때 방향값이 바뀌며 X축으로 미끄러지는 문제</summary>
   
-  - 충돌 시 물리 연산에 의해 X축 이동이 발생하는 현상을 방지하기 위해,
+  - 충돌 시 물리 연산에 의해 X축 이동이 발생하는 현상을 방지하기 위해, <br>
     `Constraints`에서 X축 위치를 고정함 (`Freeze Position X`)
   
 </details>
 
 <details>
-<summary>`AudioClip` 로딩 및 `AudioSource` 할당</summary>
+<summary>AudioClip 로딩 및 AudioSource 할당</summary>
 
   - `Resources.Load<AudioClip>()`를 사용하여 사운드 클립을 런타임에 동적으로 로드
   - 로드된 클립을 기존 `AudioSource`의 `Clip` 속성에 할당 후 재생
