@@ -92,7 +92,7 @@
 <details>
 <summary>파이프 속도가 고정되어 게임이 단조롭게 느껴졌음</summary>
   
-  - 5초마다 최대 속도를 +1씩 증가시켜 점진적인 난이도 상승을 유도함
+  - 5초마다 최대 속도를 1씩 증가시켜, 시간이 지날수록 난의도가 점진적으로 상승하도록 구현
 
 </details>
 
@@ -121,10 +121,10 @@
 </details>
 
 <details>
-<summary>AudioClip 로딩 및 AudioSource 할당</summary>
+<summary>`AudioClip` 로딩 및 `AudioSource` 할당</summary>
 
-  - `Resources.Load<AudioClip>()`를 통해 사운드 클립을 런타임에 로드
-  - 기존에 붙어 있는 `AudioSource`에 Clip을 설정하여 재생
+  - `Resources.Load<AudioClip>()`를 사용하여 사운드 클립을 런타임에 동적으로 로드
+  - 로드된 클립을 기존 `AudioSource`의 `Clip` 속성에 할당 후 재생
 
 </details>
 
@@ -132,7 +132,9 @@
 <summary>닉네임 유효성 검사</summary>
 
   - 닉네임 유효성 검사 실패 시, 경고 팝업창이 표시되도록 구현
-    ![image](https://github.com/user-attachments/assets/b28e1c7c-9b10-4fa8-b79e-c690c514848b)
+    <p align="left">
+      <img src="https://github.com/user-attachments/assets/b28e1c7c-9b10-4fa8-b79e-c690c514848b" width="600"/>
+    </p>
 
 </details>
 
