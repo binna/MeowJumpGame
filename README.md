@@ -121,7 +121,7 @@
 </details>
 
 <details>
-<summary>AudioSource 동적 로딩 및 할당</summary>
+<summary>AudioClip 로딩 및 AudioSource 할당</summary>
 
   - `Resources.Load<AudioSource>()`를 통해 사운드 클립을 런타임에 로드
   - 기존에 붙어 있는 `AudioSource`에 Clip을 설정하여 재생
@@ -132,21 +132,21 @@
 
 ## Art Resources
 
-- ```Images/Backgrounds/Intro``` → ChatGPT
-- ```Images/Backgrounds/Outer``` → ChatGPT
-- ```Images/Backgrounds/PlayGame``` → Provided during class
-- ```Images/Players``` → [Asset Store](https://assetstore.unity.com/packages/2d/characters/pet-cats-pixel-art-pack-248340)
-- ```Images/UIs``` → ChatGPT
-- ```Images/Effects``` → [Asset Store](https://assetstore.unity.com/packages/2d/characters/pixel-adventure-1-155360)
+- `Images/Backgrounds/Intro` → ChatGPT
+- `Images/Backgrounds/Outer` → ChatGPT
+- `Images/Backgrounds/PlayGame` → Provided during class
+- `Images/Players` → [Asset Store](https://assetstore.unity.com/packages/2d/characters/pet-cats-pixel-art-pack-248340)
+- `Images/UIs` → ChatGPT
+- `Images/Effects` → [Asset Store](https://assetstore.unity.com/packages/2d/characters/pixel-adventure-1-155360)
 
 <br><br>
 
 ## Sound Resources
 
-- [Intro BGM](https://pixabay.com/music/video-games-exploration-chiptune-rpg-adventure-theme-336428/) → 인트로 배경 음악
-- [Play BGM](https://pixabay.com/music/upbeat-game-music-player-console-8bit-background-intro-theme-297305/) → 게임 진행 배경 음악
-- [Outer BGM](https://pixabay.com/music/cartoons-lemonade-stand-329815/) → 외부 배경 음악
-- [Item Gain](https://pixabay.com/sound-effects/item-pick-up-38258/) → 아이템 획득 효과음
+- [IntroBGM](https://pixabay.com/music/video-games-exploration-chiptune-rpg-adventure-theme-336428/) → 인트로 배경 음악
+- [PlayBGM](https://pixabay.com/music/upbeat-game-music-player-console-8bit-background-intro-theme-297305/) → 게임 진행 배경 음악
+- [OuterBGM](https://pixabay.com/music/cartoons-lemonade-stand-329815/) → 외부 배경 음악
+- [ItemGain](https://pixabay.com/sound-effects/item-pick-up-38258/) → 아이템 획득 효과음
 - [Jump](https://pixabay.com/sound-effects/cartoon-jump-6462/) → 점프 효과음
 - [Collision](https://pixabay.com/sound-effects/small-rock-break-194553/) → 충돌 효과음
 
