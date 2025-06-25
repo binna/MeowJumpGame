@@ -33,7 +33,7 @@
 ## Gameplay
 
 - **A 2D casual game where a cat jumps over obstacles to collect Churu**  <br>
-  _고양이가 점프해서 장애물을 피하고, 츄르를 모으는 2D 캐주얼 게임_
+  _고양이가 점프해서 장애물을 피하고, 츄르를 수집하는 2D 캐주얼 게임_
 
 <br><br>
 
@@ -123,7 +123,7 @@
 <details>
 <summary>AudioClip 로딩 및 AudioSource 할당</summary>
 
-  - `Resources.Load<AudioSource>()`를 통해 사운드 클립을 런타임에 로드
+  - `Resources.Load<AudioClip>()`를 통해 사운드 클립을 런타임에 로드
   - 기존에 붙어 있는 `AudioSource`에 Clip을 설정하여 재생
 
 </details>
@@ -131,7 +131,7 @@
 <details>
 <summary>닉네임 유효성 검사</summary>
 
-  - 닉네임 유효성 검사 실패 시 경고 팝업창이 뜨도록 구현
+  - 닉네임 유효성 검사 실패 시, 경고 팝업창이 표시되도록 구현
   - ![image](https://github.com/user-attachments/assets/b28e1c7c-9b10-4fa8-b79e-c690c514848b)
 
 </details>
