@@ -70,12 +70,19 @@
 
 <details>
 <summary>Endless Map 시스템으로 무한 배경 스크롤 구현</summary>
-추후 기재
+  
+  - 배경 머티리얼의 `mainTextureOffset`을 주기적으로 변경하여 스크롤 구현
+  - 지구가 둥글게 회전하듯, 경계 없이 자연스럽게 이어지는 배경 연출
+  - 오브젝트 이동 없이 머티리얼만 조작해 리소스 사용을 최소화한 경량 작업
+  
 </details>
 
 <details>
-<summary>닉네임 고정 표시 UI와 기록 표시 기능 직접 제작</summary>
-추후 기재
+<summary>닉네임 고정 표시 UI</summary>
+
+  - 닉네임 고정 UI를 `World Space`로 설정하여 고양이 캐릭터 오브젝트 위에 고정되도록 구현  
+  - 캐릭터의 위치 정보를 받아, 위로 얼마나 띄울지 Y 좌표를 미리 게임 데이터에 제공하여 UI 위치를 제어   
+
 </details>
 
 <br><br>
@@ -83,32 +90,48 @@
 ## Known Issues & Solutions
 
 <details>
-<summary>파이프 속도가 일정해서 단조로웠음</summary>
-  5초마다 Max Speed +1 로 해결
+<summary>파이프 속도가 고정되어 게임이 단조롭게 느껴졌음</summary>
+  
+  - 5초마다 최대 속도를 +1씩 증가시켜 점진적인 난이도 상승을 유도함
+
 </details>
 
 <details>
-<summary>한 번에 게임이 끝나는게 아쉬웠음</summary>
-  목숨이란 개념을 만들었음 <br>
-  또한 목숨만 제거하면 부딪힌 파이프에 계속 부딪히게 되어 위치를 파이프보다 높은 위치에서 떨어져서 시작하게 만듦
+<summary>한 번의 충돌로 게임이 끝나 단조로웠음</summary>
+  
+  - 목숨 시스템을 도입하여 5번까지 도전 가능하게 변경
+  - 반복 충돌 방지를 위해 부활 시 파이프보다 높은 위치에서 떨어지도록 설정
+    
 </details>
 
 <details>
-<summary>츄르 만듦</summary>
-  수업시간에서는 사과였으나 고양이와 과일은 맞지 않는 피드백을 수용 <br>
-  고양이가 가장 좋아한다는 츄르를 따라가는 것으로 만듦 <br>
-  이때 애니메이션을 직접 만들었으며, ChatGPT를 이용하여 이미지를 만들어 하나로 합쳐서 애니메이션을 만듦
+<summary>츄르 애니메이션 및 이미지 제작</summary>
+  
+  - 기존 사과 아이템에서, 고양이와 어울리지 않는다는 피드백을 수용해 츄르로 변경
+  - ChatGPT로 프레임별 이미지를 생성한 후 투명 배경으로 하나로 합쳐 직접 애니메이션으로 구현
+    
 </details>
 
 <details>
-<summary>Rigidbody2D가 X축으로 밀려나는 버그</summary>
-  Rigidbody Constraints로 X축 이동 고정
+<summary>파이프와의 충돌 후, 모서리에 부딪힐 때 방향값이 바뀌며 X축으로 미끄러지는 문제</summary>
+  
+  - 충돌 시 물리 연산에 의해 X축 이동이 발생하는 현상을 방지하기 위해, `Constraints`에서 X축 위치를 고정함 (`Freeze Position X`)
+  
 </details>
 
 <details>
 <summary>프리팹 이용</summary>
   수업시간에는 직접 만들었으나 번거로움<br>
   코드로 직접 제어하고 싶어 수정
+</details>
+
+<details>
+<summary>AudioSource 동적 로딩 및 할당</summary>
+
+- `Resources.Load<AudioSource>()`를 통해 사운드 프리팹을 런타임 로딩  
+- `Instantiate()`로 오디오 인스턴스를 생성하고, 필요한 Clip만 설정하여 재생  
+- 정적 BGM 컨트롤을 위해 `DontDestroyOnLoad()`와 조합하여 사용 가능
+
 </details>
 
 <br><br>
