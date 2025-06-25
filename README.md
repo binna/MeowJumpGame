@@ -108,7 +108,7 @@
 <summary>츄르 애니메이션 및 이미지 제작</summary>
   
   - 기존 사과 아이템에서, 고양이와 어울리지 않는다는 피드백을 수용해 츄르로 변경
-  - ChatGPT로 프레임별 이미지를 생성한 후 투명 배경으로 하나로 합쳐 직접 애니메이션으로 구현
+  - ChatGPT로 프레임별 이미지를 생성한 후, 투명 배경으로 하나로 합쳐 직접 애니메이션으로 구현
     
 </details>
 
@@ -125,6 +125,14 @@
 
   - `Resources.Load<AudioSource>()`를 통해 사운드 클립을 런타임에 로드
   - 기존에 붙어 있는 `AudioSource`에 Clip을 설정하여 재생
+
+</details>
+
+<details>
+<summary>닉네임 유효성 검사</summary>
+
+  - 닉네임 유효성 검사 실패 시 경고 팝업창이 뜨도록 구현
+  - ![image](https://github.com/user-attachments/assets/b28e1c7c-9b10-4fa8-b79e-c690c514848b)
 
 </details>
 
