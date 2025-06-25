@@ -9,10 +9,7 @@ namespace Cat
         
         private readonly Vector3 _initPosition = new(0, 5f, 0);
         
-        //[SerializeField] 
         private UIManager _uiManager;
-        
-        //[SerializeField] 
         private SoundManager _soundManager;
         
         private Rigidbody2D _catRigidbody;

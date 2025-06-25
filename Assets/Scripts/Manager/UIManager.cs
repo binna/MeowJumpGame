@@ -9,10 +9,10 @@ namespace Cat
         [SerializeField]
         private TMP_InputField nicknameInputField;
         
-        [FormerlySerializedAs("nicknameTextUI")] [SerializeField]
+        [SerializeField]
         private TextMeshProUGUI nicknameText;
         
-        [FormerlySerializedAs("recordTextUI")] [SerializeField]
+        [SerializeField]
         private TextMeshProUGUI recordText;
 
         [SerializeField] 
@@ -36,6 +36,14 @@ namespace Cat
             playUI.SetActive(false);
             introUI.SetActive(true);
             outerUI.SetActive(false);
+        }
+
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                Application.Quit();
+            }
         }
 
         public void OnAlertConfirmButton()
