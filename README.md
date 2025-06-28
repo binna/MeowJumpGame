@@ -115,8 +115,8 @@
 <details>
 <summary>파이프와의 충돌 후, 모서리에 부딪힐 때 방향값이 바뀌며 X축으로 미끄러지는 문제</summary>
   
-  - 충돌 시 물리 연산에 의해 X축 이동이 발생하는 현상을 방지하기 위해, <br>
-    `Constraints`에서 X축 위치를 고정함 (`Freeze Position X`)
+  - 충돌 시 반작용으로 인해 X축 방향이 바뀌고, 이로 인해 힘이 남이 + 또는 - 방향으로 계속 이동
+  - `Constraints`에서 X축 위치를 고정(`Freeze Position X`)
   
 </details>
 
