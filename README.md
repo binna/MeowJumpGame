@@ -166,9 +166,6 @@
 **All sounds and music used in this project are from [Pixabay](https://pixabay.com/)**  
 _모든 음악 및 효과음은 [Pixabay](https://pixabay.com/)에서 제공됩니다_
 
-Free for commercial use, no attribution required  
-_상업적 사용 무료, 출처 표기 불필요_
-
 
 <br><br>
 
