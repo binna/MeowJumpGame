@@ -85,6 +85,16 @@
 
 </details>
 
+<details>
+<summary>닉네임 유효성 검사</summary>
+
+  - 닉네임 유효성 검사 실패 시, 경고 팝업창이 표시되도록 구현
+    <p align="left">
+      <img src="https://github.com/user-attachments/assets/b28e1c7c-9b10-4fa8-b79e-c690c514848b" width="600"/>
+    </p>
+
+</details>
+
 <br><br>
 
 ## Known Issues & Solutions
@@ -125,16 +135,6 @@
 
   - `Resources.Load<AudioClip>()`를 사용하여 사운드 클립을 런타임에 동적으로 로드
   - 로드된 클립을 기존 `AudioSource`의 `Clip` 속성에 할당 후 재생
-
-</details>
-
-<details>
-<summary>닉네임 유효성 검사</summary>
-
-  - 닉네임 유효성 검사 실패 시, 경고 팝업창이 표시되도록 구현
-    <p align="left">
-      <img src="https://github.com/user-attachments/assets/b28e1c7c-9b10-4fa8-b79e-c690c514848b" width="600"/>
-    </p>
 
 </details>
 
