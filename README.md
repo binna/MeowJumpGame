@@ -1,62 +1,59 @@
-# 🐾 Meow Jump Game
-> ✨ 고양이와 츄르, 그리고 모험의 세계로!
+# Meow Jump Game (2025.06.09 ~ 2025.06.26)
 
 ![image](https://github.com/user-attachments/assets/a2d6d160-0ba3-4091-b5ed-fa4b7d87e557)
 
-<p align="center">
-  <b>🐱 A jump-filled journey to collect Churu</b><br>
-  <i>고양이와 츄르를 향한 점프 모험</i>
-</p>
-
-<p align="center">
-  <a href="https://youtu.be/BIQlgI6KWB4" target="_blank">
-    🎥 <b>Watch Gameplay on YouTube</b>
-  </a>
-</p>
-
-<br><br>
-<hr>
-
-## 📑 Table of Contents
-
-1. [🎮 Gameplay](#Gameplay)
-2. [📌 Main Feature](#Main-Feature)
-3. [🛠️ Tech Stack](#Tech-Stack)
-4. [🔑 Technical](#Technical)
-5. [🐞 Known Issues & Solutions](#Known-Issues--Solutions)
-6. [🎨 Art Resources](#Art-Resources)
-7. [🎵 Sound Resources](#Sound-Resources)
-
-<hr>
-<br><br>
-
-## Gameplay
-
-- **A 2D casual game where a cat jumps over obstacles to collect Churu**  <br>
-  _고양이가 점프해서 장애물을 피하고, 츄르를 수집하는 2D 캐주얼 게임_
 
 <br><br>
 
-## Main Feature
 
-1. **무한 맵 (*Endless Map*)**  
+## 목차
+
+1. [게임소개](#게임소개)  
+2. [주요기능](#주요기능)  
+3. [기술스택](#기술스택)
+4. [기술적 구현](#기술적-구현)
+5. [이슈](#이슈)
+6. [아트 리소스](#아트-리소스)
+7. [사운드 리소스](#사운드-리소스)
+
+
+<br><br>
+
+
+## 게임소개
+
+> 고양이가 점프해서 장애물을 피하고, 츄르를 수집하는 2D 캐주얼 게임
+
+<br>
+
+- [**📽️ 시연 영상 보기**](https://youtu.be/BIQlgI6KWB4)
+
+
+<br><br>
+
+
+## 주요기능
+
+1. **무한 맵**  
    끝없이 이어지는 배경으로 무한 점프 플레이가 가능
 
-2. **파이프 속도 랜덤화 (*Random Pipe Speed*)**  
+2. **파이프 속도 랜덤화**  
    파이프는 최소 속도 3으로 시작하며, 5초마다 최대 속도가 1씩 증가
 
-3. **목숨 시스템 (*Lives System*)**  
+3. **목숨 시스템**  
    플레이어는 총 5개의 목숨을 가지며, 목숨이 하나 줄어들면 시작 위치로 복귀
 
-4. **닉네임 표시 (*Nickname Display*)**  
+4. **닉네임 표시**  
    Intro에서 닉네임을 입력하면, 게임 중 화면 상단에 고정되어 표시
 
-5. **기록 확인 (*Record Viewer*)**  
+5. **기록 확인**  
    Outro에서 자신의 플레이 기록을 확인 가능
+
 
 <br><br>
 
-## Tech Stack
+
+## 기술스택
 
 | 항목 | 내용 |
 |------|------|
@@ -64,9 +61,11 @@
 | Language | C# |
 | IDE | JetBrains Rider |
 
+
 <br><br>
 
-## Technical
+
+## 기술적 구현
 
 <details>
 <summary>Endless Map 시스템으로 무한 배경 스크롤 구현</summary>
@@ -85,19 +84,9 @@
 
 </details>
 
-<details>
-<summary>닉네임 유효성 검사</summary>
-
-  - 닉네임 유효성 검사 실패 시, 경고 팝업창이 표시되도록 구현
-    <p align="left">
-      <img src="https://github.com/user-attachments/assets/b28e1c7c-9b10-4fa8-b79e-c690c514848b" width="600"/>
-    </p>
-
-</details>
-
 <br><br>
 
-## Known Issues & Solutions
+## 이슈
 
 <details>
 <summary>파이프 속도가 고정되어 게임이 단조롭게 느껴졌음</summary>
@@ -140,7 +129,7 @@
 
 <br><br>
 
-## Art Resources
+## 아트 리소스
 
 - `Images/Backgrounds/Intro` → ChatGPT
 - `Images/Backgrounds/Outer` → ChatGPT
@@ -151,7 +140,7 @@
 
 <br><br>
 
-## Sound Resources
+## 사운드 리소스
 
 - [IntroBGM](https://pixabay.com/music/video-games-exploration-chiptune-rpg-adventure-theme-336428/) → 인트로 배경 음악
 - [PlayBGM](https://pixabay.com/music/upbeat-game-music-player-console-8bit-background-intro-theme-297305/) → 게임 진행 배경 음악
