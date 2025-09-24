@@ -151,10 +151,12 @@
 
 <br>
 
+<div align="center">
 
-**All sounds and music used in this project are from [Pixabay](https://pixabay.com/)**  
-_모든 음악 및 효과음은 [Pixabay](https://pixabay.com/)에서 제공됩니다_
+   **All sounds and music used in this project are from [Pixabay](https://pixabay.com/)**  
+   _모든 음악 및 효과음은 [Pixabay](https://pixabay.com/)에서 제공됩니다_
 
+</div>
 
 <br><br>
 
@@ -162,10 +164,10 @@ _모든 음악 및 효과음은 [Pixabay](https://pixabay.com/)에서 제공됩�
 
 <div align="center">
 
-⭐ **Thanks for taking a look at Meow Jump Game!** ⭐
+   ⭐ **Thanks for taking a look at Meow Jump Game!** ⭐
 
-📌 **본 프로젝트는 개인 포트폴리오 용도로 제작되었습니다**  
-저작권 및 기타 문제되는 부분이 있을 경우  
-`every5116@naver.com` 으로 연락 주시면 신속히 대응하겠습니다
+   📌 **본 프로젝트는 개인 포트폴리오 용도로 제작되었습니다**  
+   저작권 및 기타 문제되는 부분이 있을 경우  
+   `every5116@naver.com` 으로 연락 주시면 신속히 대응하겠습니다
+   
 </div>
-
