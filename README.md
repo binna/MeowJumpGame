@@ -70,9 +70,9 @@
 <details>
 <summary>Endless Map 시스템으로 무한 배경 스크롤 구현</summary>
   
-  - 배경 머티리얼의 `mainTextureOffset`을 주기적으로 변경하여 무한 스크롤 구현
-  - 지구가 둥글게 회전하듯, 끊김 없이 자연스럽게 이어지는 루프형 배경 연출
-  - 오브젝트 이동 없이 머티리얼만 조작해 리소스 사용을 최소화한 경량 작업
+  - 배경 머티리얼의 `mainTextureOffset`을 주기적으로 변경해 무한 스크롤 구현
+  - 지구가 둥글게 회전하듯 끊김 없는 루프형 배경 연출
+  - 오브젝트 이동 없이 머티리얼만 조작해 리소스 사용 최소화
   
 </details>
 
@@ -80,7 +80,7 @@
 <summary>닉네임 고정 표시 UI</summary>
 
   - 닉네임 고정 UI를 `World Space`로 설정하여 고양이 캐릭터 오브젝트 위에 고정되도록 구현  
-  - 캐릭터의 위치 정보를 받아, 사전 지정한 Y축 오프셋만큼 UI 위치를 조정
+  - 캐릭터의 위치 정보를 받아, 사전 지정한 Y축 오프셋만큼 UI 위치를 동적으로 조정
 
 </details>
 
@@ -112,18 +112,17 @@
 </details>
 
 <details>
-<summary>파이프와의 충돌 후, 모서리에 부딪힐 때 방향값이 바뀌며 X축으로 미끄러지는 문제</summary>
+<summary>파이프와의 충돌 후 X축으로 미끄러짐</summary>
   
   - 충돌한 뒤 착지 과정에서 발생한 반작용으로 인해 velocity의 X축 값이 바뀌며 그 영향으로 + 또는 - 방향으로 계속 이동
-  - `Constraints`에서 X축 위치를 고정(`Freeze Position X`)
+  - Rigidbody의 `Constraints`에서 X축 위치를 고정(`Freeze Position X`)하여 불필요한 이동 차단
   
 </details>
 
 <details>
-<summary>AudioClip 로딩 및 AudioSource 할당</summary>
+<summary>AudioClip 코드 기반 로딩 및 할당</summary>
 
-  - `Resources.Load<AudioClip>()`를 사용하여 사운드 클립을 런타임에 동적으로 로드
-  - 로드된 클립을 기존 `AudioSource`의 `Clip` 속성에 할당 후 재생
+  - `Resources.Load`를 사용하여 사운드 클립을 런타임에 동적으로 로드
 
 </details>
 
