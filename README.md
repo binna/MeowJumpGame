@@ -24,7 +24,7 @@
 
 <br>
 
-- [**📽️ 시연 영상 보기**](https://youtu.be/BIQlgI6KWB4)
+- [**시연 영상 보기**](https://youtu.be/BIQlgI6KWB4)
 
 
 <br><br>
